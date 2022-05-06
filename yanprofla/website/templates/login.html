@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block title %}Авторизация{% endblock %}
+{% block content%}
+<form method="POST" class="authorization"
+  style="border: 5mm ridge #f0ffff;
+         background-color: #e0ffff;
+         padding: 20px;
+         width: 800px;
+         height: auto;
+         margin-top: 200px;
+         margin-left: 240px;">
+  <h3 align="center">Авторизация</h3>
+  <div class="form-group">
+    <label for="email">Ваш e-mail</label>
+    <input
+      type="text"
+      id="email"
+      name="email"
+      class="form-control"
+      placeholder="Введите e-mail"
+    />
+    <label for="password">Ваш пароль</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      class="form-control"
+      placeholder="Введите пароль"
+    />
+    <br />
+    <div align="center">
+      <button class="btn btn-secondary" type="submit">Авторизоваться</button>
+    </div>
+  </div>
+</form>
+{% endblock %}

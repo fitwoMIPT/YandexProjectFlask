@@ -1,0 +1,15 @@
+.authorization {
+    width: 25%;
+    height: 80%;
+    border: 3px solid #FFFFFF;
+    background-color: #ff00ff;
+    padding: 20px;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+.container {
+	background-color: #e0ffff;
+}

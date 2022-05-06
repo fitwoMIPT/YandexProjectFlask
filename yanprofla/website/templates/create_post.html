@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block title %}Новый пост{% endblock %} {% block content
+%}
+<form method="POST"
+style="border: 5mm ridge #f0ffff;
+         background-color: #e0ffff;
+         padding: 20px;
+         width: 800px;
+         height: auto;
+         margin-top: 50px;
+         margin-left: 240px;">
+  <h2 align="center">Расскажите о чем-нибудь!</h2>
+  <textarea name="text" id="text" class="form-control" style="height: 500px;"></textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-lg btn-primary">Опубликовать</button>
+  </div>
+</form>
+<br />
+<div align="center">
+  <a href="/home"
+    ><button type="button" class="btn btn-lg btn-secondary">Назад</button></a
+  >
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title %}Регистрация{% endblock %}
+{% block content %}
+<form method="POST"
+  style="border: 5mm ridge #f0ffff;
+         background-color: #e0ffff;
+         padding: 20px;
+         width: 800px;
+         height: auto;
+         margin-top: 200px;
+         margin-left: 240px;">
+  <h3 align="center">Регистрация</h3>
+  <div class="form-group">
+    <label for="email">Ваш e-mail</label>
+    <input
+      type="text"
+      id="email"
+      name="email"
+      class="form-control"
+      placeholder="Введите e-mail"
+    />
+    <label for="username">Придумайте никнейм</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      class="form-control"
+      placeholder="Введите никнейм"
+    />
+    <label for="password1">Придумайте пароль</label>
+    <input
+      type="password"
+      id="password1"
+      name="password1"
+      class="form-control"
+      placeholder="Введите пароль"
+    />
+    <label for="password2">Подтвердите пароль</label>
+    <input
+      type="password"
+      id="password2"
+      name="password2"
+      class="form-control"
+      placeholder="Подтверждение пароля"
+    />
+    <br />
+    <div align="center">
+      <button class="btn btn-secondary" type="submit">Зарегистрироваться</button>
+    </div>
+  </div>
+</form>
+{% endblock %}

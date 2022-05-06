@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+    Магазин
+{% endblock %}
+
+{% block content %}
+<table class="table table-hover table-light">
+    <thead>
+        <tr>
+            <!-- Your Columns HERE -->
+            <th scope="col">ID</th>
+            <th scope="col">Наименование</th>
+            <th scope="col">Серийный номер</th>
+            <th scope="col">Стоимость</th>
+            <th scope="col">Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Your rows inside the table HERE: -->
+        {% for item in items %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.barcode }}</td>
+                <td>{{ item.price }}$</td>
+                <td>
+                    <button class="btn btn-outline btn-info">Подробнее</button>
+                    <button class="btn btn-outline btn-success">Купить</button>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<small>Наш сайт не несёт ответственности за безопасность совершённых сделок!</small>
+{% endblock %}
